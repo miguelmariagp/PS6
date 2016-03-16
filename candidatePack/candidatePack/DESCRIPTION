@@ -1,0 +1,10 @@
+Package: candidatePack
+Title: Package to deal with primary candidates
+Version: 0.1
+Authors: Miguel Pereira
+Maintainer: Miguel Pereira <m.pereira@wustl.edu>
+Description: Package to deal with primary candidates for the 2016 election
+Depends:
+    R (>= 3.2.2)
+License: WUSTL
+RoxygenNote: 5.0.1
