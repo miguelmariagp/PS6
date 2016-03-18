@@ -16,13 +16,13 @@ load_all(current.code)
 document(current.code)
 
 #Creating a Candidate object only with three arguments
-me<-createCandidate("Miguel", 844, "Dem")
+me<-createCandidate("Pereira", 844, "Dem")
 class(me)
 
 #Show method
 me
 
-#Pring method
+#Print method
 print(me)
 
 #The propNeeded function at work. This function receives a candidate object
