@@ -3,24 +3,24 @@
 \name{propNeeded}
 \alias{propNeeded}
 \alias{propNeeded,ANY-method}
-\title{Computes prooportion of remaining delegates necessary to win the nomination}
+\title{Proportion of remaining delegates necessary to win the nomination}
 \usage{
 propNeeded(candidate, remainingDelegates)
 }
 \arguments{
-\item{candidate}{An object of the class Candidate'.}
+\item{candidate}{An object of the class 'Candidate'.}
 
 \item{remainingDelegates}{The number of party delegates yet to be allocated in the candidate's party.}
 }
 \value{
-The proportion of the delegates a given candidate still needs to secure her party's nomination
+The proportion of the remaining delegates still that a given candidate needs to win in order to get her party's nomination.
 }
 \description{
-The function calculates the proportion of remaining delegates needed by a presidential candidate to win the nomination
+The function calculates the proportion of remaining delegates needed by a presidential candidate to win the nomination.
 }
 \examples{
 
-candidate.Bern <- createCandidate("Bernie Sanders", 180, "Dem")
+candidate.Bern <- createCandidate("Sanders", 180, "Dem")
 propNeeded(candidate.Bern, 1000) 
 
 }

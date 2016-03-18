@@ -1,7 +1,8 @@
 #' Create object of class `Candidate'
 #'
-#' A function to create a new object of class Candidate, that automatically calculates 
-#' how many delegates the candidate still needs to secure her party's nomination.
+#' This function creates a new object of class Candidate.
+#' 
+#' The function accepts three arguments: the delegate's name, the number of delegates won and her party.
 #'
 #' @param name A string with the name of the presidential candidate. 
 #' @param delegatesWon A numeric object with the number of delegates already won by the candidate.
@@ -12,12 +13,12 @@
 #' \item \code{name} Name of the candidate
 #' \item \code{delegatesWon} Number of delegates won by the candidate so far
 #' \item \code{party} Candidate party
-#' \item \code{delegatesNeeded} Number of delegates needed 
+#' \item \code{delegatesNeeded} Number of delegates needed to win the nomination in her party
 #'  }
 #' @author Miguel Pereira \email{m.pereira@@wustl.edu}
 #' @examples
 #' 
-#' createCandidate("Bernie Sanders", 140, "Dem") 
+#' createCandidate("Sanders", 140, "Dem") 
 #' 
 #' @rdname createCandidate
 #' @aliases createCandidate,ANY-method

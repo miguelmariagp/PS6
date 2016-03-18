@@ -8,7 +8,7 @@
 \alias{plot,Race-method}
 \title{An object of class Race}
 \description{
-Obects of class \code{Race} summarize the standing of the different candidates in a given primary race.
+Objects of class \code{Race} summarize the standing of the different candidates in a given primary race.
 }
 \details{
 An object of the class `Race' has the following slots:

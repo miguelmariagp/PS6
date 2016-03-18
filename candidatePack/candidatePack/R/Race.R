@@ -1,6 +1,6 @@
 #' An object of class Race
 #' 
-#' Obects of class \code{Race} summarize the standing of the different candidates in a given primary race.
+#' Objects of class \code{Race} summarize the standing of the different candidates in a given primary race.
 #'
 #' 
 #' An object of the class `Race' has the following slots:
@@ -73,7 +73,11 @@ setMethod(f="plot",
             #Finally, creating a barplot with both pieces of information by candidate
             barplot(t(toplot), beside=T, ylab="Delegates", 
                     cex.names=0.8, las=2, ylim=c(0,test@candidates[[1]]@delegatesNeeded), 
-                    col=c("darkblue","red"), main=paste("Delegates won and needed by", test@party, "candidates"),
-                    legend=colnames(toplot))
+                    col=c("darkblue","gold"), main=paste("Delegates won and needed by", test@party, "candidates"))
+                    #,legend=colnames(toplot))
+            #And a line for the remaining delegates available
+            abline(a=x@delegatesRemaining,b=0, lty=2)
+            legend("top",legend=c("won","needed","left"), lty=c(NA,NA,2), fill=c("darkblue","gold","white"), border="white", bty="n",ncol=3)
           }   
 )
+
